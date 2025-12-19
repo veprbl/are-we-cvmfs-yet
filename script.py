@@ -41,6 +41,46 @@ def update_file(owner, repo, path, new_content, sha, branch, token):
         raise RuntimeError(f"Failed to update file: {resp.status_code} {resp.text}")
     print(f"Successfully updated {path} on branch {branch}")
 
+def plot_lag(content_str: str) -> None:
+    """Plot synchronization lag from the state file content.
+
+    Each line of ``content_str`` should be ``<current_unix> <fetched_unix>``.
+    The function saves the plot as ``lag_plot.png``.
+    """
+    import matplotlib
+    matplotlib.use('Agg')  # non‑interactive backend suitable for CI/headless
+    import matplotlib.pyplot as plt
+    plt.xkcd()
+    plt.rcParams.update({'font.family': 'DejaVu Sans'})
+
+    timestamps = []
+    lags = []
+    for line in content_str.strip().split('\n'):
+        parts = line.split()
+        if len(parts) != 2:
+            continue
+        cur_ts = int(parts[0])
+        fetched_ts_line = int(parts[1])
+        timestamps.append(datetime.datetime.utcfromtimestamp(cur_ts))
+        # convert lag from seconds to hours
+        lags.append((fetched_ts_line - cur_ts) / 3600)
+
+    if timestamps:
+        plt.figure(figsize=(10, 5))
+        ax = plt.gca()
+        ax.plot(timestamps, lags, marker='o')
+        ax.set_title('CVMFS Synchronization Lag')
+        ax.set_xlabel('Date')
+        ax.set_ylabel('Synchronization lag (hours)')
+        from matplotlib.dates import DateFormatter
+        ax.xaxis.set_major_formatter(DateFormatter('%b %d'))
+        ax.grid(True)
+        plt.tight_layout()
+        plt.savefig('lag_plot.png')
+        plt.show()
+    else:
+        print('No valid timestamp pairs found for plotting.')
+
 
 def fetch_cvmfs_timestamp():
     """Fetch the .cvmfspublished file and return the UNIX timestamp following the leading 'T'."""
@@ -75,6 +115,9 @@ def main():
     new_content = content + f"\n{timestamp} {fetched_ts}"
 
     update_file(owner, repo, file_path, new_content, sha, branch, token)
+
+    # Visualization: plot synchronization lag over time
+    plot_lag(new_content)
 
 if __name__ == "__main__":
     main()
