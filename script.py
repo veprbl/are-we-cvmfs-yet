@@ -117,12 +117,12 @@ def fetch_cvmfs_timestamp(host_url):
 def fetch_all_cvmfs_timestamps(fqrn):
     """Fetch timestamps from all CVMFS hosts for a given FQRN."""
     host_bases = [
-        "http://cvmfs-egi.gridpp.rl.ac.uk:8000/cvmfs",
-        "http://klei.nikhef.nl:8000/cvmfs", 
-        "http://cvmfs-s1bnl.opensciencegrid.org:8000/cvmfs",
-        "http://cvmfs-s1fnal.opensciencegrid.org:8000/cvmfs",
-        "http://cvmfsrep.grid.sinica.edu.tw:8000/cvmfs",
-        "http://cvmfs-stratum-one.ihep.ac.cn:8000/cvmfs"
+        "http://s1ral-cvmfs.openhtc.io/cvmfs",
+        "http://s1nikhef-cvmfs.openhtc.io/cvmfs",
+        "http://s1bnl-cvmfs.openhtc.io/cvmfs",
+        "http://s1fnal-cvmfs.openhtc.io/cvmfs",
+        "http://s1asgc-cvmfs.openhtc.io:8080/cvmfs",
+        "http://s1ihep-cvmfs.openhtc.io/cvmfs"
     ]
     
     results = {}
