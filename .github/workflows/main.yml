@@ -37,12 +37,15 @@ jobs:
       - name: Create simple page
         run: |
           mkdir site
-          mv lag_plot.png site/
+          mv lag_plot_*.png site/
           cat >site/index.html <<EOF
           <!DOCTYPE html>
           <html><head><title>Are we CVMFS yet?</title></head><body>
           <h1>Are we CVMFS yet?</h1>
-          <img src="lag_plot.png" alt="Lag Plot" style="max-width:100%;height:auto;"/>
+          <h2>Singularity FQRN</h2>
+          <img src="lag_plot_singularity.png" alt="Singularity Lag Plot" style="max-width:100%;height:auto;"/>
+          <h2>EIC FQRN</h2>
+          <img src="lag_plot_eic.png" alt="EIC Lag Plot" style="max-width:100%;height:auto;"/>
           </body></html>
           EOF
 
