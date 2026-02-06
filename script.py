@@ -41,10 +41,10 @@ def update_file(owner, repo, path, new_content, sha, branch, token):
         raise RuntimeError(f"Failed to update file: {resp.status_code} {resp.text}")
     print(f"Successfully updated {path} on branch {branch}")
 
-def plot_lag(content_str: str) -> None:
-    """Plot synchronization lag from the state file content.
+def plot_lag(data: list) -> None:
+    """Plot synchronization lag from the state data.
 
-    Each line of ``content_str`` should be ``<current_unix> <fetched_unix>``.
+    ``data`` should be a list of dictionaries with timestamp and hosts data.
     The function saves the plot as ``lag_plot.png``.
     """
     import matplotlib
@@ -53,46 +53,117 @@ def plot_lag(content_str: str) -> None:
     plt.xkcd()
     plt.rcParams.update({'font.family': 'DejaVu Sans'})
 
-    timestamps = []
-    lags = []
-    for line in content_str.strip().split('\n'):
-        parts = line.split()
-        if len(parts) != 2:
+    # Collect data for each host
+    host_data = {}
+    
+    for entry in data:
+        if not entry or 'timestamp' not in entry or 'hosts' not in entry:
             continue
-        cur_ts = int(parts[0])
-        fetched_ts_line = int(parts[1])
-        timestamps.append(datetime.datetime.utcfromtimestamp(cur_ts))
-        # convert lag from seconds to hours
-        lags.append((fetched_ts_line - cur_ts) / 3600)
+        
+        cur_ts = int(entry['timestamp'])
+        current_time = datetime.datetime.utcfromtimestamp(cur_ts)
+        
+        for host, fetched_ts_str in entry['hosts'].items():
+            if host not in host_data:
+                host_data[host] = {'timestamps': [], 'lags': []}
+            
+            try:
+                fetched_ts = int(fetched_ts_str)
+                lag_hours = (fetched_ts - cur_ts) / 3600
+                host_data[host]['timestamps'].append(current_time)
+                host_data[host]['lags'].append(lag_hours)
+            except (ValueError, TypeError):
+                continue
 
-    if timestamps:
-        plt.figure(figsize=(10, 5))
+    if host_data:
+        plt.figure(figsize=(12, 6))
         ax = plt.gca()
-        ax.plot(timestamps, lags, marker='o')
-        ax.set_title('CVMFS Synchronization Lag')
+        
+        for host, data_dict in host_data.items():
+            if data_dict['timestamps']:
+                ax.plot(data_dict['timestamps'], data_dict['lags'], 
+                       marker='o', label=host, alpha=0.7)
+        
+        ax.set_title('CVMFS Synchronization Lag by Host')
         ax.set_xlabel('Date')
         ax.set_ylabel('Synchronization lag (hours)')
+        ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
         from matplotlib.dates import DateFormatter
         ax.xaxis.set_major_formatter(DateFormatter('%b %d'))
         ax.grid(True)
         plt.tight_layout()
-        plt.savefig('lag_plot.png')
+        plt.savefig('lag_plot.png', bbox_inches='tight')
         plt.show()
     else:
         print('No valid timestamp pairs found for plotting.')
 
 
-def fetch_cvmfs_timestamp():
+def fetch_cvmfs_timestamp(host_url):
     """Fetch the .cvmfspublished file and return the UNIX timestamp following the leading 'T'."""
-    url = "http://cvmfs-s1bnl.opensciencegrid.org:8000/cvmfs/singularity/.cvmfspublished"
-    resp = requests.get(url, timeout=10)
+    resp = requests.get(host_url, timeout=10)
     if resp.status_code != 200:
-        raise RuntimeError(f"Failed to fetch cvmfs timestamp: {resp.status_code}")
+        raise RuntimeError(f"Failed to fetch cvmfs timestamp from {host_url}: {resp.status_code}")
     for line in resp.text.splitlines():
         if line.startswith('T'):
             # line format: T<unix_timestamp>
             return line[1:].strip()
-    raise RuntimeError("No line starting with 'T' found in .cvmfspublished")
+    raise RuntimeError(f"No line starting with 'T' found in .cvmfspublished from {host_url}")
+
+
+def fetch_all_cvmfs_timestamps():
+    """Fetch timestamps from all CVMFS hosts."""
+    hosts = [
+        "http://cvmfs-egi.gridpp.rl.ac.uk:8000/cvmfs/singularity/.cvmfspublished",
+        "http://klei.nikhef.nl:8000/cvmfs/singularity/.cvmfspublished", 
+        "http://cvmfs-s1bnl.opensciencegrid.org:8000/cvmfs/singularity/.cvmfspublished",
+        "http://cvmfs-s1fnal.opensciencegrid.org:8000/cvmfs/singularity/.cvmfspublished",
+        "http://cvmfsrep.grid.sinica.edu.tw:8000/cvmfs/singularity/.cvmfspublished",
+        "http://cvmfs-stratum-one.ihep.ac.cn:8000/cvmfs/singularity/.cvmfspublished"
+    ]
+    
+    results = {}
+    for host_url in hosts:
+        try:
+            timestamp = fetch_cvmfs_timestamp(host_url)
+            # Extract host identifier from URL
+            host_name = host_url.split("://")[1].split(":")[0]
+            results[host_name] = timestamp
+        except Exception as e:
+            print(f"Warning: Failed to fetch from {host_url}: {e}")
+            # Continue with other hosts
+    
+    return results
+
+
+def migrate_state_txt_to_json(owner, repo, token, branch):
+    """Migrate existing state.txt to state.json format if it exists."""
+    try:
+        # Try to get existing state.txt
+        content, _ = get_file(owner, repo, "state.txt", branch, token)
+        print("Found existing state.txt, migrating to JSON format...")
+        
+        # Parse the old format and convert to new format
+        migrated_data = []
+        for line in content.strip().split('\n'):
+            if not line.strip():
+                continue
+            parts = line.split()
+            if len(parts) == 2:
+                current_ts = parts[0]
+                fetched_ts = parts[1]
+                # Convert old single-host format to new multi-host format
+                entry = {
+                    "timestamp": current_ts,
+                    "hosts": {
+                        "cvmfs-s1bnl.opensciencegrid.org": fetched_ts
+                    }
+                }
+                migrated_data.append(entry)
+        
+        return migrated_data
+    except Exception as e:
+        print(f"No existing state.txt found or migration failed: {e}")
+        return []
 
 
 def main():
@@ -101,23 +172,58 @@ def main():
     if not token:
         raise RuntimeError("GITHUB_TOKEN not set")
 
-    file_path = "state.txt"
+    file_path = "state.json"
     branch = "state"
 
-    # Read current content
-    content, sha = get_file(owner, repo, file_path, branch, token)
-    print(f"Current content of {file_path}:\n{content}")
+    # Try to read current JSON content, or migrate from state.txt
+    try:
+        content, sha = get_file(owner, repo, file_path, branch, token)
+        data = json.loads(content)
+        print(f"Current content of {file_path} loaded successfully")
+    except Exception as e:
+        print(f"Could not load {file_path}: {e}")
+        # Try to migrate from state.txt
+        data = migrate_state_txt_to_json(owner, repo, token, branch)
+        sha = None  # Will be a new file
 
-    # Fetch the published timestamp from CVMFS
-    fetched_ts = fetch_cvmfs_timestamp()
-    # Append both timestamps: <current UTC UNIX> <fetched UNIX>
-    timestamp = str(int(datetime.datetime.utcnow().timestamp()))
-    new_content = content + f"\n{timestamp} {fetched_ts}"
-
-    update_file(owner, repo, file_path, new_content, sha, branch, token)
+    # Fetch timestamps from all CVMFS hosts
+    host_timestamps = fetch_all_cvmfs_timestamps()
+    
+    if not host_timestamps:
+        raise RuntimeError("Failed to fetch timestamps from any host")
+    
+    # Create new entry with current timestamp and all host data
+    current_timestamp = str(int(datetime.datetime.utcnow().timestamp()))
+    new_entry = {
+        "timestamp": current_timestamp,
+        "hosts": host_timestamps
+    }
+    
+    # Append new entry to data
+    data.append(new_entry)
+    
+    # Convert back to JSON string
+    new_content = json.dumps(data, indent=2)
+    
+    # Update the file
+    if sha:
+        update_file(owner, repo, file_path, new_content, sha, branch, token)
+    else:
+        # Create new file (no SHA needed for new files)
+        url = f"https://api.github.com/repos/{owner}/{repo}/contents/{file_path}"
+        headers = {"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"}
+        payload = {
+            "message": f"Create {file_path} via GitHub Action",
+            "content": base64.b64encode(new_content.encode()).decode(),
+            "branch": branch,
+        }
+        resp = requests.put(url, headers=headers, data=json.dumps(payload))
+        if resp.status_code not in (200, 201):
+            raise RuntimeError(f"Failed to create file: {resp.status_code} {resp.text}")
+        print(f"Successfully created {file_path} on branch {branch}")
 
     # Visualization: plot synchronization lag over time
-    plot_lag(new_content)
+    plot_lag(data)
 
 if __name__ == "__main__":
     main()
