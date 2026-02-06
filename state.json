@@ -1,1274 +1,1710 @@
 [
   {
     "timestamp": "1766072292",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766063341"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766063341"
+      }
     }
   },
   {
     "timestamp": "1766081883",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766063341"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766063341"
+      }
     }
   },
   {
     "timestamp": "1766105751",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766103929"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766103929"
+      }
     }
   },
   {
     "timestamp": "1766125125",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766109695"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766109695"
+      }
     }
   },
   {
     "timestamp": "1766146923",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766135177"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766135177"
+      }
     }
   },
   {
     "timestamp": "1766168223",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766155902"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766155902"
+      }
     }
   },
   {
     "timestamp": "1766170090",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+      }
     }
   },
   {
     "timestamp": "1766170150",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+      }
     }
   },
   {
     "timestamp": "1766170221",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+      }
     }
   },
   {
     "timestamp": "1766170304",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+      }
     }
   },
   {
     "timestamp": "1766170952",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+      }
     }
   },
   {
     "timestamp": "1766171357",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+      }
     }
   },
   {
     "timestamp": "1766171481",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766169348"
+      }
     }
   },
   {
     "timestamp": "1766194924",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766189036"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766189036"
+      }
     }
   },
   {
     "timestamp": "1766212375",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766208135"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766208135"
+      }
     }
   },
   {
     "timestamp": "1766234447",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766228345"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766228345"
+      }
     }
   },
   {
     "timestamp": "1766255297",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766253766"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766253766"
+      }
     }
   },
   {
     "timestamp": "1766282012",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766267759"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766267759"
+      }
     }
   },
   {
     "timestamp": "1766298763",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766287872"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766287872"
+      }
     }
   },
   {
     "timestamp": "1766320895",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766305741"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766305741"
+      }
     }
   },
   {
     "timestamp": "1766341803",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766332576"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766332576"
+      }
     }
   },
   {
     "timestamp": "1766368376",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766365528"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766365528"
+      }
     }
   },
   {
     "timestamp": "1766385447",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766384283"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766384283"
+      }
     }
   },
   {
     "timestamp": "1766407567",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766406619"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766406619"
+      }
     }
   },
   {
     "timestamp": "1766428409",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766407704"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766407704"
+      }
     }
   },
   {
     "timestamp": "1766454515",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766442047"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766442047"
+      }
     }
   },
   {
     "timestamp": "1766471776",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766458170"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766458170"
+      }
     }
   },
   {
     "timestamp": "1766494070",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766478026"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766478026"
+      }
     }
   },
   {
     "timestamp": "1766514809",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766513327"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766513327"
+      }
     }
   },
   {
     "timestamp": "1766540809",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766525200"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766525200"
+      }
     }
   },
   {
     "timestamp": "1766558185",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766546982"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766546982"
+      }
     }
   },
   {
     "timestamp": "1766580332",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766576858"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766576858"
+      }
     }
   },
   {
     "timestamp": "1766601141",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766587767"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766587767"
+      }
     }
   },
   {
     "timestamp": "1766627341",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766622223"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766622223"
+      }
     }
   },
   {
     "timestamp": "1766644545",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766642028"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766642028"
+      }
     }
   },
   {
     "timestamp": "1766666689",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766663291"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766663291"
+      }
     }
   },
   {
     "timestamp": "1766687498",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766683815"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766683815"
+      }
     }
   },
   {
     "timestamp": "1766713692",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766711360"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766711360"
+      }
     }
   },
   {
     "timestamp": "1766730902",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766726072"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766726072"
+      }
     }
   },
   {
     "timestamp": "1766753081",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766746055"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766746055"
+      }
     }
   },
   {
     "timestamp": "1766773915",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766761744"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766761744"
+      }
     }
   },
   {
     "timestamp": "1766799950",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766799575"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766799575"
+      }
     }
   },
   {
     "timestamp": "1766817212",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766806752"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766806752"
+      }
     }
   },
   {
     "timestamp": "1766839334",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766834832"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766834832"
+      }
     }
   },
   {
     "timestamp": "1766860223",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766846037"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766846037"
+      }
     }
   },
   {
     "timestamp": "1766887129",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766881720"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766881720"
+      }
     }
   },
   {
     "timestamp": "1766903621",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766900369"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766900369"
+      }
     }
   },
   {
     "timestamp": "1766925780",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766923964"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766923964"
+      }
     }
   },
   {
     "timestamp": "1766946683",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766943654"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766943654"
+      }
     }
   },
   {
     "timestamp": "1766973436",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766969069"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766969069"
+      }
     }
   },
   {
     "timestamp": "1766990268",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766982392"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766982392"
+      }
     }
   },
   {
     "timestamp": "1767012561",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1766993970"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1766993970"
+      }
     }
   },
   {
     "timestamp": "1767033172",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767014184"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767014184"
+      }
     }
   },
   {
     "timestamp": "1767059360",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767050486"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767050486"
+      }
     }
   },
   {
     "timestamp": "1767076562",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767074967"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767074967"
+      }
     }
   },
   {
     "timestamp": "1767098879",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767077651"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767077651"
+      }
     }
   },
   {
     "timestamp": "1767119621",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767116070"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767116070"
+      }
     }
   },
   {
     "timestamp": "1767145780",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767135630"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767135630"
+      }
     }
   },
   {
     "timestamp": "1767162985",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767154492"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767154492"
+      }
     }
   },
   {
     "timestamp": "1767185185",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767154492"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767154492"
+      }
     }
   },
   {
     "timestamp": "1767205919",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767197764"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767197764"
+      }
     }
   },
   {
     "timestamp": "1767232789",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767218078"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767218078"
+      }
     }
   },
   {
     "timestamp": "1767249381",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767236883"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767236883"
+      }
     }
   },
   {
     "timestamp": "1767271571",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767255789"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767255789"
+      }
     }
   },
   {
     "timestamp": "1767292338",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767284686"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767284686"
+      }
     }
   },
   {
     "timestamp": "1767318661",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767312722"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767312722"
+      }
     }
   },
   {
     "timestamp": "1767335762",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767328400"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767328400"
+      }
     }
   },
   {
     "timestamp": "1767357858",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767356260"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767356260"
+      }
     }
   },
   {
     "timestamp": "1767378725",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767368991"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767368991"
+      }
     }
   },
   {
     "timestamp": "1767404718",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767386325"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767386325"
+      }
     }
   },
   {
     "timestamp": "1767422018",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767419057"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767419057"
+      }
     }
   },
   {
     "timestamp": "1767444149",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767422751"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767422751"
+      }
     }
   },
   {
     "timestamp": "1767465038",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767445750"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767445750"
+      }
     }
   },
   {
     "timestamp": "1767492028",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767474372"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767474372"
+      }
     }
   },
   {
     "timestamp": "1767508449",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767502202"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767502202"
+      }
     }
   },
   {
     "timestamp": "1767530568",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767510225"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767510225"
+      }
     }
   },
   {
     "timestamp": "1767551487",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767544821"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767544821"
+      }
     }
   },
   {
     "timestamp": "1767578439",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767565733"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767565733"
+      }
     }
   },
   {
     "timestamp": "1767595299",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767584791"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767584791"
+      }
     }
   },
   {
     "timestamp": "1767617465",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767584791"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767584791"
+      }
     }
   },
   {
     "timestamp": "1767638132",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767634980"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767634980"
+      }
     }
   },
   {
     "timestamp": "1767664258",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767662975"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767662975"
+      }
     }
   },
   {
     "timestamp": "1767681434",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767679767"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767679767"
+      }
     }
   },
   {
     "timestamp": "1767703744",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767697783"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767697783"
+      }
     }
   },
   {
     "timestamp": "1767724459",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767697783"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767697783"
+      }
     }
   },
   {
     "timestamp": "1767750639",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767731916"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767731916"
+      }
     }
   },
   {
     "timestamp": "1767767813",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767749122"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767749122"
+      }
     }
   },
   {
     "timestamp": "1767790204",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767775765"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767775765"
+      }
     }
   },
   {
     "timestamp": "1767810953",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767800448"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767800448"
+      }
     }
   },
   {
     "timestamp": "1767837069",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767822515"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767822515"
+      }
     }
   },
   {
     "timestamp": "1767854211",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767851584"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767851584"
+      }
     }
   },
   {
     "timestamp": "1767876617",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767864089"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767864089"
+      }
     }
   },
   {
     "timestamp": "1767897098",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767884714"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767884714"
+      }
     }
   },
   {
     "timestamp": "1767923499",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767904013"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767904013"
+      }
     }
   },
   {
     "timestamp": "1767940612",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767923300"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767923300"
+      }
     }
   },
   {
     "timestamp": "1767962946",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767958846"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767958846"
+      }
     }
   },
   {
     "timestamp": "1767983697",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767972181"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767972181"
+      }
     }
   },
   {
     "timestamp": "1768009680",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1767992529"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1767992529"
+      }
     }
   },
   {
     "timestamp": "1768026767",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768012090"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768012090"
+      }
     }
   },
   {
     "timestamp": "1768048966",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768047212"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768047212"
+      }
     }
   },
   {
     "timestamp": "1768069905",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768055697"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768055697"
+      }
     }
   },
   {
     "timestamp": "1768096824",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768077332"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768077332"
+      }
     }
   },
   {
     "timestamp": "1768113278",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768097654"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768097654"
+      }
     }
   },
   {
     "timestamp": "1768135409",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768131610"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768131610"
+      }
     }
   },
   {
     "timestamp": "1768156279",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768140273"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768140273"
+      }
     }
   },
   {
     "timestamp": "1768183006",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768180811"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768180811"
+      }
     }
   },
   {
     "timestamp": "1768199958",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768198448"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768198448"
+      }
     }
   },
   {
     "timestamp": "1768222304",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768220961"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768220961"
+      }
     }
   },
   {
     "timestamp": "1768242934",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768232175"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768232175"
+      }
     }
   },
   {
     "timestamp": "1768268909",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768266037"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768266037"
+      }
     }
   },
   {
     "timestamp": "1768286202",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768266037"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768266037"
+      }
     }
   },
   {
     "timestamp": "1768308702",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768301391"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768301391"
+      }
     }
   },
   {
     "timestamp": "1768329225",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768301391"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768301391"
+      }
     }
   },
   {
     "timestamp": "1768355735",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768336375"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768336375"
+      }
     }
   },
   {
     "timestamp": "1768372613",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768357588"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768357588"
+      }
     }
   },
   {
     "timestamp": "1768395078",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768357588"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768357588"
+      }
     }
   },
   {
     "timestamp": "1768415768",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768396558"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768396558"
+      }
     }
   },
   {
     "timestamp": "1768441847",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768430248"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768430248"
+      }
     }
   },
   {
     "timestamp": "1768458982",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768451581"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768451581"
+      }
     }
   },
   {
     "timestamp": "1768481422",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768470621"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768470621"
+      }
     }
   },
   {
     "timestamp": "1768502347",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768470621"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768470621"
+      }
     }
   },
   {
     "timestamp": "1768528356",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768511361"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768511361"
+      }
     }
   },
   {
     "timestamp": "1768545419",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768541690"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768541690"
+      }
     }
   },
   {
     "timestamp": "1768567764",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768556227"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768556227"
+      }
     }
   },
   {
     "timestamp": "1768588518",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768573485"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768573485"
+      }
     }
   },
   {
     "timestamp": "1768614404",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768595009"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768595009"
+      }
     }
   },
   {
     "timestamp": "1768631587",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768595009"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768595009"
+      }
     }
   },
   {
     "timestamp": "1768653752",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768632756"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768632756"
+      }
     }
   },
   {
     "timestamp": "1768674650",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768667438"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768667438"
+      }
     }
   },
   {
     "timestamp": "1768701531",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768688973"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768688973"
+      }
     }
   },
   {
     "timestamp": "1768718026",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768708783"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768708783"
+      }
     }
   },
   {
     "timestamp": "1768740153",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768708783"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768708783"
+      }
     }
   },
   {
     "timestamp": "1768761005",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768757363"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768757363"
+      }
     }
   },
   {
     "timestamp": "1768787822",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768780575"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768780575"
+      }
     }
   },
   {
     "timestamp": "1768804875",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768801106"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768801106"
+      }
     }
   },
   {
     "timestamp": "1768827218",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768813225"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768813225"
+      }
     }
   },
   {
     "timestamp": "1768847698",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768840747"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768840747"
+      }
     }
   },
   {
     "timestamp": "1768873930",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768862912"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768862912"
+      }
     }
   },
   {
     "timestamp": "1768891140",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768877864"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768877864"
+      }
     }
   },
   {
     "timestamp": "1768913643",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768898945"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768898945"
+      }
     }
   },
   {
     "timestamp": "1768934346",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768918821"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768918821"
+      }
     }
   },
   {
     "timestamp": "1768960512",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768918821"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768918821"
+      }
     }
   },
   {
     "timestamp": "1768977547",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768973519"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768973519"
+      }
     }
   },
   {
     "timestamp": "1769000031",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1768994908"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1768994908"
+      }
     }
   },
   {
     "timestamp": "1769021125",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769014517"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769014517"
+      }
     }
   },
   {
     "timestamp": "1769046926",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769034690"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769034690"
+      }
     }
   },
   {
     "timestamp": "1769063885",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769063199"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769063199"
+      }
     }
   },
   {
     "timestamp": "1769086421",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769081877"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769081877"
+      }
     }
   },
   {
     "timestamp": "1769106944",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769081877"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769081877"
+      }
     }
   },
   {
     "timestamp": "1769133122",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769124144"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769124144"
+      }
     }
   },
   {
     "timestamp": "1769150235",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769144408"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769144408"
+      }
     }
   },
   {
     "timestamp": "1769172695",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769171912"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769171912"
+      }
     }
   },
   {
     "timestamp": "1769193382",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769191068"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769191068"
+      }
     }
   },
   {
     "timestamp": "1769219328",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769217197"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769217197"
+      }
     }
   },
   {
     "timestamp": "1769236469",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769217197"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769217197"
+      }
     }
   },
   {
     "timestamp": "1769258614",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769239728"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769239728"
+      }
     }
   },
   {
     "timestamp": "1769279527",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769261016"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769261016"
+      }
     }
   },
   {
     "timestamp": "1769306553",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769296058"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769296058"
+      }
     }
   },
   {
     "timestamp": "1769322900",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769316254"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769316254"
+      }
     }
   },
   {
     "timestamp": "1769345163",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769332854"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769332854"
+      }
     }
   },
   {
     "timestamp": "1769365926",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769359813"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769359813"
+      }
     }
   },
   {
     "timestamp": "1769392908",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769375304"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769375304"
+      }
     }
   },
   {
     "timestamp": "1769409591",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769400755"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769400755"
+      }
     }
   },
   {
     "timestamp": "1769431963",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769428372"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769428372"
+      }
     }
   },
   {
     "timestamp": "1769452735",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769448061"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769448061"
+      }
     }
   },
   {
     "timestamp": "1769479111",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769461031"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769461031"
+      }
     }
   },
   {
     "timestamp": "1769495894",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769482344"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769482344"
+      }
     }
   },
   {
     "timestamp": "1769518470",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769500990"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769500990"
+      }
     }
   },
   {
     "timestamp": "1769539258",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769537264"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769537264"
+      }
     }
   },
   {
     "timestamp": "1769565276",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769559894"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769559894"
+      }
     }
   },
   {
     "timestamp": "1769582334",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769559894"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769559894"
+      }
     }
   },
   {
     "timestamp": "1769604855",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769601000"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769601000"
+      }
     }
   },
   {
     "timestamp": "1769625602",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769607281"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769607281"
+      }
     }
   },
   {
     "timestamp": "1769652507",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769645318"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769645318"
+      }
     }
   },
   {
     "timestamp": "1769669477",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769645318"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769645318"
+      }
     }
   },
   {
     "timestamp": "1769691672",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769666662"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769666662"
+      }
     }
   },
   {
     "timestamp": "1769712671",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769703371"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769703371"
+      }
     }
   },
   {
     "timestamp": "1769738929",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769719370"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769719370"
+      }
     }
   },
   {
     "timestamp": "1769755977",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769739745"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769739745"
+      }
     }
   },
   {
     "timestamp": "1769777946",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769776486"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769776486"
+      }
     }
   },
   {
     "timestamp": "1769798701",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769782160"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769782160"
+      }
     }
   },
   {
     "timestamp": "1769825105",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769804112"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769804112"
+      }
     }
   },
   {
     "timestamp": "1769841713",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769824385"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769824385"
+      }
     }
   },
   {
     "timestamp": "1769863884",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769844155"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769844155"
+      }
     }
   },
   {
     "timestamp": "1769884517",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769881355"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769881355"
+      }
     }
   },
   {
     "timestamp": "1769913210",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769893528"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769893528"
+      }
     }
   },
   {
     "timestamp": "1769928741",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769918482"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769918482"
+      }
     }
   },
   {
     "timestamp": "1769950416",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769918482"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769918482"
+      }
     }
   },
   {
     "timestamp": "1769971034",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769950644"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769950644"
+      }
     }
   },
   {
     "timestamp": "1769999069",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1769983383"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1769983383"
+      }
     }
   },
   {
     "timestamp": "1770015867",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770014060"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770014060"
+      }
     }
   },
   {
     "timestamp": "1770037406",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770021432"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770021432"
+      }
     }
   },
   {
     "timestamp": "1770058066",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770042807"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770042807"
+      }
     }
   },
   {
     "timestamp": "1770085392",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770063101"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770063101"
+      }
     }
   },
   {
     "timestamp": "1770101678",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770063101"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770063101"
+      }
     }
   },
   {
     "timestamp": "1770123852",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770113734"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770113734"
+      }
     }
   },
   {
     "timestamp": "1770145123",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770134896"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770134896"
+      }
     }
   },
   {
     "timestamp": "1770171007",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770154816"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770154816"
+      }
     }
   },
   {
     "timestamp": "1770188097",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770174457"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770174457"
+      }
     }
   },
   {
     "timestamp": "1770210203",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770209629"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770209629"
+      }
     }
   },
   {
     "timestamp": "1770231243",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770213587"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770213587"
+      }
     }
   },
   {
     "timestamp": "1770257451",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770254302"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770254302"
+      }
     }
   },
   {
     "timestamp": "1770274889",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770254302"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770254302"
+      }
     }
   },
   {
     "timestamp": "1770296757",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770289391"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770289391"
+      }
     }
   },
   {
     "timestamp": "1770317525",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770289391"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770289391"
+      }
     }
   },
   {
     "timestamp": "1770343887",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770328941"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770328941"
+      }
     }
   },
   {
     "timestamp": "1770361046",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770357108"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770357108"
+      }
     }
   },
   {
     "timestamp": "1770382991",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770373313"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770373313"
+      }
     }
   },
   {
     "timestamp": "1770419338",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770385552",
-      "cvmfs-s1fnal.opensciencegrid.org": "1770397913",
-      "cvmfs-stratum-one.ihep.ac.cn": "1770397913"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770385552",
+        "cvmfs-s1fnal.opensciencegrid.org": "1770397913",
+        "cvmfs-stratum-one.ihep.ac.cn": "1770397913"
+      }
     }
   },
   {
     "timestamp": "1770419409",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770385552",
-      "cvmfs-s1fnal.opensciencegrid.org": "1770397913",
-      "cvmfs-stratum-one.ihep.ac.cn": "1770397913"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770385552",
+        "cvmfs-s1fnal.opensciencegrid.org": "1770397913",
+        "cvmfs-stratum-one.ihep.ac.cn": "1770397913"
+      }
     }
   },
   {
     "timestamp": "1770419666",
-    "hosts": {
-      "cvmfs-s1bnl.opensciencegrid.org": "1770385552",
-      "cvmfs-s1fnal.opensciencegrid.org": "1770397913",
-      "cvmfs-stratum-one.ihep.ac.cn": "1770397913"
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770385552",
+        "cvmfs-s1fnal.opensciencegrid.org": "1770397913",
+        "cvmfs-stratum-one.ihep.ac.cn": "1770397913"
+      }
+    }
+  },
+  {
+    "timestamp": "1770419851",
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770385552",
+        "cvmfs-s1fnal.opensciencegrid.org": "1770397913",
+        "cvmfs-stratum-one.ihep.ac.cn": "1770397913"
+      },
+      "eic": {
+        "cvmfs-s1fnal.opensciencegrid.org": "1768285653",
+        "cvmfs-stratum-one.ihep.ac.cn": "1768285653"
+      }
     }
   }
 ]
