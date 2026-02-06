@@ -1706,5 +1706,19 @@
         "cvmfs-stratum-one.ihep.ac.cn": "1768285653"
       }
     }
+  },
+  {
+    "timestamp": "1770401943",
+    "fqrns": {
+      "singularity": {
+        "cvmfs-s1bnl.opensciencegrid.org": "1770385552",
+        "cvmfs-s1fnal.opensciencegrid.org": "1770397913",
+        "cvmfs-stratum-one.ihep.ac.cn": "1770397913"
+      },
+      "eic": {
+        "cvmfs-s1fnal.opensciencegrid.org": "1768285653",
+        "cvmfs-stratum-one.ihep.ac.cn": "1768285653"
+      }
+    }
   }
 ]
