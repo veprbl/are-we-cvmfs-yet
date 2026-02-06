@@ -122,7 +122,8 @@ def fetch_all_cvmfs_timestamps(fqrn):
         "http://s1bnl-cvmfs.openhtc.io/cvmfs",
         "http://s1fnal-cvmfs.openhtc.io/cvmfs",
         "http://s1asgc-cvmfs.openhtc.io:8080/cvmfs",
-        "http://s1ihep-cvmfs.openhtc.io/cvmfs"
+        "http://s1ihep-cvmfs.openhtc.io/cvmfs",
+        "http://cvmfs-stratum-one.ihep.ac.cn:8000/cvmfs"
     ]
     
     results = {}
