@@ -41,11 +41,11 @@ def update_file(owner, repo, path, new_content, sha, branch, token):
         raise RuntimeError(f"Failed to update file: {resp.status_code} {resp.text}")
     print(f"Successfully updated {path} on branch {branch}")
 
-def plot_lag(data: list) -> None:
-    """Plot synchronization lag from the state data.
+def plot_lag(data: list, fqrn: str) -> None:
+    """Plot synchronization lag from the state data for a specific FQRN.
 
-    ``data`` should be a list of dictionaries with timestamp and hosts data.
-    The function saves the plot as ``lag_plot.png``.
+    ``data`` should be a list of dictionaries with timestamp and fqrns data.
+    The function saves the plot as ``lag_plot_{fqrn}.png``.
     """
     import matplotlib
     matplotlib.use('Agg')  # non‑interactive backend suitable for CI/headless
@@ -57,13 +57,17 @@ def plot_lag(data: list) -> None:
     host_data = {}
     
     for entry in data:
-        if not entry or 'timestamp' not in entry or 'hosts' not in entry:
+        if not entry or 'timestamp' not in entry or 'fqrns' not in entry:
             continue
         
+        # Skip entries that don't have data for this FQRN
+        if fqrn not in entry['fqrns']:
+            continue
+            
         cur_ts = int(entry['timestamp'])
         current_time = datetime.datetime.utcfromtimestamp(cur_ts)
         
-        for host, fetched_ts_str in entry['hosts'].items():
+        for host, fetched_ts_str in entry['fqrns'][fqrn].items():
             if host not in host_data:
                 host_data[host] = {'timestamps': [], 'lags': []}
             
@@ -84,7 +88,7 @@ def plot_lag(data: list) -> None:
                 ax.plot(data_dict['timestamps'], data_dict['lags'], 
                        marker='o', label=host, alpha=0.7)
         
-        ax.set_title('CVMFS Synchronization Lag by Host')
+        ax.set_title(f'CVMFS Synchronization Lag by Host - {fqrn}')
         ax.set_xlabel('Date')
         ax.set_ylabel('Synchronization lag (hours)')
         ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
@@ -92,10 +96,10 @@ def plot_lag(data: list) -> None:
         ax.xaxis.set_major_formatter(DateFormatter('%b %d'))
         ax.grid(True)
         plt.tight_layout()
-        plt.savefig('lag_plot.png', bbox_inches='tight')
+        plt.savefig(f'lag_plot_{fqrn}.png', bbox_inches='tight')
         plt.show()
     else:
-        print('No valid timestamp pairs found for plotting.')
+        print(f'No valid timestamp pairs found for plotting {fqrn}.')
 
 
 def fetch_cvmfs_timestamp(host_url):
@@ -110,23 +114,24 @@ def fetch_cvmfs_timestamp(host_url):
     raise RuntimeError(f"No line starting with 'T' found in .cvmfspublished from {host_url}")
 
 
-def fetch_all_cvmfs_timestamps():
-    """Fetch timestamps from all CVMFS hosts."""
-    hosts = [
-        "http://cvmfs-egi.gridpp.rl.ac.uk:8000/cvmfs/singularity/.cvmfspublished",
-        "http://klei.nikhef.nl:8000/cvmfs/singularity/.cvmfspublished", 
-        "http://cvmfs-s1bnl.opensciencegrid.org:8000/cvmfs/singularity/.cvmfspublished",
-        "http://cvmfs-s1fnal.opensciencegrid.org:8000/cvmfs/singularity/.cvmfspublished",
-        "http://cvmfsrep.grid.sinica.edu.tw:8000/cvmfs/singularity/.cvmfspublished",
-        "http://cvmfs-stratum-one.ihep.ac.cn:8000/cvmfs/singularity/.cvmfspublished"
+def fetch_all_cvmfs_timestamps(fqrn):
+    """Fetch timestamps from all CVMFS hosts for a given FQRN."""
+    host_bases = [
+        "http://cvmfs-egi.gridpp.rl.ac.uk:8000/cvmfs",
+        "http://klei.nikhef.nl:8000/cvmfs", 
+        "http://cvmfs-s1bnl.opensciencegrid.org:8000/cvmfs",
+        "http://cvmfs-s1fnal.opensciencegrid.org:8000/cvmfs",
+        "http://cvmfsrep.grid.sinica.edu.tw:8000/cvmfs",
+        "http://cvmfs-stratum-one.ihep.ac.cn:8000/cvmfs"
     ]
     
     results = {}
-    for host_url in hosts:
+    for host_base in host_bases:
+        host_url = f"{host_base}/{fqrn}/.cvmfspublished"
         try:
             timestamp = fetch_cvmfs_timestamp(host_url)
             # Extract host identifier from URL
-            host_name = host_url.split("://")[1].split(":")[0]
+            host_name = host_base.split("://")[1].split(":")[0]
             results[host_name] = timestamp
         except Exception as e:
             print(f"Warning: Failed to fetch from {host_url}: {e}")
@@ -151,11 +156,13 @@ def migrate_state_txt_to_json(owner, repo, token, branch):
             if len(parts) == 2:
                 current_ts = parts[0]
                 fetched_ts = parts[1]
-                # Convert old single-host format to new multi-host format
+                # Convert old single-host format to new multi-FQRN format
                 entry = {
                     "timestamp": current_ts,
-                    "hosts": {
-                        "cvmfs-s1bnl.opensciencegrid.org": fetched_ts
+                    "fqrns": {
+                        "singularity": {
+                            "cvmfs-s1bnl.opensciencegrid.org": fetched_ts
+                        }
                     }
                 }
                 migrated_data.append(entry)
@@ -174,6 +181,7 @@ def main():
 
     file_path = "state.json"
     branch = "state"
+    fqrns = ["singularity", "eic"]
 
     # Try to read current JSON content, or migrate from state.txt
     try:
@@ -186,17 +194,23 @@ def main():
         data = migrate_state_txt_to_json(owner, repo, token, branch)
         sha = None  # Will be a new file
 
-    # Fetch timestamps from all CVMFS hosts
-    host_timestamps = fetch_all_cvmfs_timestamps()
+    # Fetch timestamps from all CVMFS hosts for each FQRN
+    fqrn_data = {}
+    for fqrn in fqrns:
+        host_timestamps = fetch_all_cvmfs_timestamps(fqrn)
+        if host_timestamps:
+            fqrn_data[fqrn] = host_timestamps
+        else:
+            print(f"Warning: Failed to fetch timestamps for FQRN {fqrn}")
     
-    if not host_timestamps:
-        raise RuntimeError("Failed to fetch timestamps from any host")
+    if not fqrn_data:
+        raise RuntimeError("Failed to fetch timestamps from any FQRN")
     
-    # Create new entry with current timestamp and all host data
+    # Create new entry with current timestamp and all FQRN data
     current_timestamp = str(int(datetime.datetime.utcnow().timestamp()))
     new_entry = {
         "timestamp": current_timestamp,
-        "hosts": host_timestamps
+        "fqrns": fqrn_data
     }
     
     # Append new entry to data
@@ -222,8 +236,9 @@ def main():
             raise RuntimeError(f"Failed to create file: {resp.status_code} {resp.text}")
         print(f"Successfully created {file_path} on branch {branch}")
 
-    # Visualization: plot synchronization lag over time
-    plot_lag(data)
+    # Visualization: plot synchronization lag over time for each FQRN
+    for fqrn in fqrns:
+        plot_lag(data, fqrn)
 
 if __name__ == "__main__":
     main()
