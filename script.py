@@ -140,70 +140,6 @@ def fetch_all_cvmfs_timestamps(fqrn):
     return results
 
 
-def migrate_state_txt_to_json(owner, repo, token, branch):
-    """Migrate existing state.txt to state.json format if it exists."""
-    try:
-        # Try to get existing state.txt
-        content, _ = get_file(owner, repo, "state.txt", branch, token)
-        print("Found existing state.txt, migrating to JSON format...")
-        
-        # Parse the old format and convert to new format
-        migrated_data = []
-        for line in content.strip().split('\n'):
-            if not line.strip():
-                continue
-            parts = line.split()
-            if len(parts) == 2:
-                current_ts = parts[0]
-                fetched_ts = parts[1]
-                # Convert old single-host format to new multi-FQRN format
-                entry = {
-                    "timestamp": current_ts,
-                    "fqrns": {
-                        "singularity": {
-                            "cvmfs-s1bnl.opensciencegrid.org": fetched_ts
-                        }
-                    }
-                }
-                migrated_data.append(entry)
-        
-        return migrated_data
-    except Exception as e:
-        print(f"No existing state.txt found or migration failed: {e}")
-        return []
-
-
-def migrate_hosts_to_fqrns(data):
-    """Migrate existing JSON data from hosts format to fqrns format."""
-    migrated_data = []
-    migration_needed = False
-    
-    for entry in data:
-        if not entry or 'timestamp' not in entry:
-            continue
-            
-        # Check if this entry uses the old 'hosts' format
-        if 'hosts' in entry and 'fqrns' not in entry:
-            migration_needed = True
-            # Convert old hosts format to new fqrns format
-            migrated_entry = {
-                "timestamp": entry["timestamp"],
-                "fqrns": {
-                    "singularity": entry["hosts"]
-                }
-            }
-            migrated_data.append(migrated_entry)
-        elif 'fqrns' in entry:
-            # Already in new format, keep as is
-            migrated_data.append(entry)
-        else:
-            # Unknown format, skip
-            print(f"Warning: Skipping entry with unknown format: {entry}")
-    
-    if migration_needed:
-        print("Migrated existing JSON data from hosts format to fqrns format")
-    
-    return migrated_data
 
 
 def main():
@@ -216,19 +152,14 @@ def main():
     branch = "state"
     fqrns = ["singularity", "eic"]
 
-    # Try to read current JSON content, or migrate from state.txt
+    # Try to read current JSON content
     try:
         content, sha = get_file(owner, repo, file_path, branch, token)
         data = json.loads(content)
         print(f"Current content of {file_path} loaded successfully")
-        
-        # Check if migration from hosts to fqrns format is needed
-        data = migrate_hosts_to_fqrns(data)
-        
     except Exception as e:
         print(f"Could not load {file_path}: {e}")
-        # Try to migrate from state.txt
-        data = migrate_state_txt_to_json(owner, repo, token, branch)
+        data = []
         sha = None  # Will be a new file
 
     # Fetch timestamps from all CVMFS hosts for each FQRN
