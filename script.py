@@ -173,6 +173,39 @@ def migrate_state_txt_to_json(owner, repo, token, branch):
         return []
 
 
+def migrate_hosts_to_fqrns(data):
+    """Migrate existing JSON data from hosts format to fqrns format."""
+    migrated_data = []
+    migration_needed = False
+    
+    for entry in data:
+        if not entry or 'timestamp' not in entry:
+            continue
+            
+        # Check if this entry uses the old 'hosts' format
+        if 'hosts' in entry and 'fqrns' not in entry:
+            migration_needed = True
+            # Convert old hosts format to new fqrns format
+            migrated_entry = {
+                "timestamp": entry["timestamp"],
+                "fqrns": {
+                    "singularity": entry["hosts"]
+                }
+            }
+            migrated_data.append(migrated_entry)
+        elif 'fqrns' in entry:
+            # Already in new format, keep as is
+            migrated_data.append(entry)
+        else:
+            # Unknown format, skip
+            print(f"Warning: Skipping entry with unknown format: {entry}")
+    
+    if migration_needed:
+        print("Migrated existing JSON data from hosts format to fqrns format")
+    
+    return migrated_data
+
+
 def main():
     owner, repo = get_repo_info()
     token = os.getenv("GITHUB_TOKEN")
@@ -188,6 +221,10 @@ def main():
         content, sha = get_file(owner, repo, file_path, branch, token)
         data = json.loads(content)
         print(f"Current content of {file_path} loaded successfully")
+        
+        # Check if migration from hosts to fqrns format is needed
+        data = migrate_hosts_to_fqrns(data)
+        
     except Exception as e:
         print(f"Could not load {file_path}: {e}")
         # Try to migrate from state.txt
